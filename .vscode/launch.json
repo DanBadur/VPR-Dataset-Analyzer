@@ -64,6 +64,23 @@
             "python": "${command:python.interpreterPath}",
             "stopOnEntry": false,
             "justMyCode": false
+        },
+                {
+            "name": "Debug csv_browser.py ",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/csv_browser.py",
+            "args": [
+                "queries_v1_results_updated_20250905_123346.csv",
+                "--debug-paths",
+                "--start-query", "0"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "python": "${command:python.interpreterPath}",
+            "stopOnEntry": false,
+            "justMyCode": false
         }
     ]
 }
